@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.2rem;
+  background-color: beige;
+}
+h1 {
+  text-align: center;
+  padding: 25px 0;
+  color: #0099ff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  display: flex;
+  width: 280px;
+  height: 350px;
+  margin: 40px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #524c4a;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.screen {
+  min-width: 200px;
+  min-height: 30px;
+  background-color: white;
+}
+.calculatorButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.calculatorButtonsMath {
+  display: flex;
+  justify-content: center;
+}
+
+.calculatorInput,
+.calculatorMathInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  gap: 2px;
+}
+.numbers:hover,
+.mathNumbers:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #3a3939;
+}
+.numbers:active,
+.mathNumbers:active {
+  box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.numbers,
+.mathNumbers {
+  user-select: none;
+}
+.calculatorButtons {
+  width: 70%;
+}
+.calculatorMathInput {
+  width: 30%;
+}
+.numbers {
+  padding: 15px;
+}
+
+.calculatorInput div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  height: 20px;
+  width: 30px;
+  background-color: #3a3939;
+  color: white;
+}
+.mathNumbers {
+  display: flex;
+  justify-content: center;
+  padding: 0px 20px;
+  width: 30px;
+  height: 30px;
+  background-color: #3a3939;
+  color: white;
+}
